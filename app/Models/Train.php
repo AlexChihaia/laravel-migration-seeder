@@ -13,6 +13,9 @@ class Train extends Model
         'created_at',
         'updated_at',
         'deleted_at',
-        'departure_time',
+    ];
+    protected $casts = [
+        'departure_time' => 'datetime',
+        'arrival_time' => 'datetime',
     ];
 }
